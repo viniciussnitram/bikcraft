@@ -1,6 +1,6 @@
 .button {
     display: inline-block;
-    color: #332200;
+    color: var(--color-p05);
     background: linear-gradient(#FFBF00, #F2A50C);
     border: none;
     border-radius: 4px;
