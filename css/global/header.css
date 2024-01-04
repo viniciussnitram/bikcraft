@@ -24,10 +24,7 @@
 .header .header-menu .header-menu-item a {
     padding: 16px 0px;
     display: inline-block;
-    font-size: 1.125rem;
     position: relative;
-    font-family: 'Poppins';
-    font-weight: 400;
 }
 
 .header .header-menu .header-menu-item a:after {
