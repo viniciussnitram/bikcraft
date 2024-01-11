@@ -39,6 +39,25 @@
     background: var(--color-09);
 }
 
+.button.arrow {
+    display: flex;
+    align-items: center;
+}
+
+.button.arrow::after {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 10px;
+    margin-left: 12px;
+    background: url('../../img/svg/icones/seta.svg');
+    transition: transform 0.2s;
+}
+
+.button.arrow:hover::after {
+    transform: translateX(4px);
+}
+
 .link {
     display: inline-block;
     color: var(--color-p01);
