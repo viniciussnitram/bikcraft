@@ -14,6 +14,7 @@
 @import './home/evidence.css';
 
 /* Bikes */
+@import './bikes/bikes.css';
 @import './bikes/bikes-list.css';
 
 /* Insurance */
