@@ -33,7 +33,7 @@
 
 .budget .budget-product {
     border-radius: 5px 0px 0px 5px;
-    background-color: var(--color-12);
+    background: var(--color-12) url('../../img/svg/dec/bottom-left.svg') no-repeat bottom 20px left 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-content: start;
@@ -123,7 +123,7 @@
 
 .budget .budget-data {
     border-radius: 0px 5px 5px 0px;
-    background-color: var(--color-00);
+    background: var(--color-00) url('../../img/svg/dec/bottom-right.svg') no-repeat bottom 20px right 20px;
 }
 
 .budget .budget-product .budget-content .budget-details {
@@ -164,6 +164,7 @@
 
     .budget .budget-product {
         border-radius: 5px 5px 0px 0px;
+        background: var(--color-12);
     }
 
     .budget .budget-data {
