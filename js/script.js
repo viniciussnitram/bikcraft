@@ -24,3 +24,22 @@ function activateProduct(param) {
 }
 
 params.forEach(activateProduct);
+
+// FAQ
+const questions = document.querySelectorAll('.faq button');
+
+function activateQuestion(event) {
+    const currentQuestion = event.currentTarget;
+    const controls = currentQuestion.getAttribute('aria-controls');
+    const answer = document.getElementById(controls);
+
+    answer.classList.toggle('active');
+    const active = answer.classList.contains('active');
+    currentQuestion.setAttribute('aria-expanded', active);
+}
+
+function questionsEvents(question) {
+    question.addEventListener('click', activateQuestion);
+}
+
+questions.forEach(questionsEvents);

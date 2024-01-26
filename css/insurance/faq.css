@@ -16,15 +16,19 @@
     background-color: var(--color-01);
 }
 
-#insurance .faq dl div dt {
+#insurance .faq dl div dt button {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
     gap: 8px;
     cursor: pointer;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
 }
 
-#insurance .faq dl div dt::before {
+#insurance .faq dl div dt button::before {
     content: '';
     display: inline-block;
     width: 12px;
@@ -32,7 +36,7 @@
     background-color: var(--color-p01);
 }
 
-#insurance .faq dl div dt::after {
+#insurance .faq dl div dt button::after {
     content: '';
     display: inline-block;
     width: 14px;
@@ -41,8 +45,17 @@
     transition: 0.3s;
 }
 
-#insurance .faq dl div dt:hover::after {
+#insurance .faq dl div dt button:hover::after, 
+#insurance .faq dl div dt button[aria-expanded="true"]::after {
     transform: rotate(180deg);
+}
+
+#insurance .faq dl div dd {
+    display: none;
+}
+
+#insurance .faq dl div dd.active {
+    display: block;
 }
 
 #insurance .faq dl div dd {
