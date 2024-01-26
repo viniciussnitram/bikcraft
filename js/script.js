@@ -43,3 +43,22 @@ function questionsEvents(question) {
 }
 
 questions.forEach(questionsEvents);
+
+// Bikes Gallery
+const gallery = document.querySelectorAll('.bike-images img');
+const galleryContainer = document.querySelector('.bike-images');
+
+function changeImage(event) {
+    const currentImg = event.currentTarget;
+    const media = matchMedia ('(min-width: 1000px)').matches;
+
+    if (media) {
+        galleryContainer.prepend(currentImg);
+    }
+}
+
+function galleryEvents(img) {
+    img.addEventListener('click', changeImage);
+}
+
+gallery.forEach(galleryEvents);
