@@ -1,6 +1,7 @@
+// Activate Menu Links
 const links = document.querySelectorAll('.header-menu a');
 
-function activeLink(link) {
+function activateLink(link) {
     const url = location.href;
     const href = link.href;
 
@@ -9,4 +10,17 @@ function activeLink(link) {
     }
 }
 
-links.forEach(activeLink);
+links.forEach(activateLink);
+
+// Activate Budget Items
+const params = new URLSearchParams(location.search);
+
+function activateProduct(param) {
+    const element = document.getElementById(param);
+    
+    if (element) {
+        element.checked = true;
+    }
+}
+
+params.forEach(activateProduct);
