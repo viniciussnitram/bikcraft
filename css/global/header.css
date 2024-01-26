@@ -35,7 +35,8 @@
     position: absolute;
 }
 
-.header .header-menu .header-menu-item a:hover:after {
+.header .header-menu .header-menu-item a:hover::after,
+.header .header-menu .header-menu-item a.active::after {
     width: 100%;
 }
 
