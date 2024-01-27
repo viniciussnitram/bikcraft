@@ -50,11 +50,11 @@
     transform: rotate(180deg);
 }
 
-#insurance .faq dl div dd {
+.js #insurance .faq dl div dd {
     display: none;
 }
 
-#insurance .faq dl div dd.active {
+.js #insurance .faq dl div dd.active {
     display: block;
 }
 
